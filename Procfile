@@ -1,0 +1,1 @@
+web: gunicorn poetry_project.wsgi --log-file -
