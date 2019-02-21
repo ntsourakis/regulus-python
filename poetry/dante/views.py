@@ -13,7 +13,11 @@ import json
 import uuid
 import sys
 sys.path.append('./dante/python/')
+sys.path.append('/app/poetry/python/')
 import dante.python.lite_call_runtime_top as call
+import os 
+dir_path = os.path.dirname(os.path.realpath(__file__))
+print(dir_path)
 
 States ={};
 
@@ -24,8 +28,7 @@ def DantePageView(request):
 class DanteInitView(APIView):
     permission_classes = (IsAuthenticated,)
 
-    def get(self, request):
-        
+    def get(self, request): 
         print(request.META.get('HTTP_AUTHORIZATION').split(' ')[1])
         l_newState = call.init_basic()
         #l_newState = call.init_state('C:/Projects/django/callector/api/python/call_tables.data.gz', 'C:/Projects/django/callector/api/python/robust_matching_tables.data.gz')
