@@ -1,10 +1,6 @@
 #!/usr/bin/python
 
-import sys
-sys.path.append('./dante/python/')
-sys.path.append('/app/poetry/python/')
-
-import lite_call_runtime as call_main
+import dante.python.lite_call_runtime as call_main
 #import sys
 #sys.path.append('C:/Projects/django/callector/api/python/')
 import os 
