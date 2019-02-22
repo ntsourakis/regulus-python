@@ -3,7 +3,7 @@
 import strasly.python.lite_grammar_match_tables as lgm_tables
 import strasly.python.lite_grammar_match_parameters as parameters
 import strasly.python.lite_grammar_match_regularise as regularise
-import wagnerfischer as w
+import strasly.python.wagnerfischer as w
 
 # TOP-LEVEL CALLS
 
