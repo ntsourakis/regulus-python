@@ -12,7 +12,7 @@ from django.conf import settings
 import json
 import uuid
 import sys
-sys.path.append('./montale/python/')
+#sys.path.append('./montale/python/')
 import montale.python.lite_call_runtime_top as call
 
 

@@ -1,8 +1,8 @@
 #!/usr/bin/python
 
-import lite_grammar_match_tables as lgm_tables
-import lite_grammar_match_parameters as parameters
-import wagnerfischer as w
+import montale.python.lite_grammar_match_tables as lgm_tables
+import montale.python.lite_grammar_match_parameters as parameters
+import montale.python.wagnerfischer as w
 import math
 
 # ======================================================================

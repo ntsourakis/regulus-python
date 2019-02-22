@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 
     # Local Apps
 	'dante.apps.DanteConfig',
-	#'montale.apps.MontaleConfig',
+	'montale.apps.MontaleConfig',
 	#'pirandello.apps.PirandelloConfig',
 	#'pozzi.apps.PozziConfig',
 	#'quasimodo.apps.QuasimodoConfig',

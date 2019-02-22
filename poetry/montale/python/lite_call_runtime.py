@@ -1,13 +1,13 @@
 #!/usr/bin/python
 
-import lite_call_output_manager as output_manager
-import lite_call_tables as tables
-import lite_call_scores as scores
-import lite_call_logging as log
+import montale.python.lite_call_output_manager as output_manager
+import montale.python.lite_call_tables as tables
+import montale.python.lite_call_scores as scores
+import montale.python.lite_call_logging as log
 
-import lite_grammar_match as lgm
-import lite_grammar_match_tables as lgm_tables
-import lite_grammar_match_regularise as lgm_regularise
+import montale.python.lite_grammar_match as lgm
+import montale.python.lite_grammar_match_tables as lgm_tables
+import montale.python.lite_grammar_match_regularise as lgm_regularise
 
 import random
 
