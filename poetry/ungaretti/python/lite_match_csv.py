@@ -1,7 +1,7 @@
 
 # ---------------------------------------------------
 
-import lite_grammar_match
+import ungaretti.python.lite_grammar_match
 import csv 
 import time
 import sys

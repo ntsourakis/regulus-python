@@ -12,7 +12,7 @@ from django.conf import settings
 import json
 import uuid
 import sys
-sys.path.append('./saba/python/')
+#sys.path.append('./saba/python/')
 import saba.python.lite_call_runtime_top as call
 
 States ={};

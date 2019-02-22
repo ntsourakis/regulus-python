@@ -1,10 +1,10 @@
 #!/usr/bin/python
 
-import lite_call_tables as tables
+import pozzi.python.lite_call_tables as tables
 
-import lite_call_english as english
-import lite_call_french as french
-import lite_call_german as german
+import pozzi.python.lite_call_english as english
+import pozzi.python.lite_call_french as french
+import pozzi.python.lite_call_german as german
 
 # Turn abstract actions into strings
 

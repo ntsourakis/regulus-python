@@ -1,8 +1,8 @@
 #!/usr/bin/python
 
-import lite_grammar_match_tables as lgm_tables
-import lite_grammar_match_parameters as parameters
-import lite_grammar_match_regularise as regularise
+import strasly.python.lite_grammar_match_tables as lgm_tables
+import strasly.python.lite_grammar_match_parameters as parameters
+import strasly.python.lite_grammar_match_regularise as regularise
 import wagnerfischer as w
 
 # TOP-LEVEL CALLS

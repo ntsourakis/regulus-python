@@ -1,13 +1,13 @@
 #!/usr/bin/python
 
-import lite_call_output_manager as output_manager
-import lite_call_tables as tables
-import lite_call_scores as scores
-import lite_call_logging as log
+import quasimodo.python.lite_call_output_manager as output_manager
+import quasimodo.python.lite_call_tables as tables
+import quasimodo.python.lite_call_scores as scores
+import quasimodo.python.lite_call_logging as log
 
-import lite_grammar_match as lgm
-import lite_grammar_match_tables as lgm_tables
-import lite_grammar_match_regularise as lgm_regularise
+import quasimodo.python.lite_grammar_match as lgm
+import quasimodo.python.lite_grammar_match_tables as lgm_tables
+import quasimodo.python.lite_grammar_match_regularise as lgm_regularise
 
 import random
 

@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import lite_call_runtime as call_main
+import ungaretti.python.lite_call_runtime as call_main
 import os 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -12,8 +12,8 @@ def init():
 
 # Use this to load table file from canonical place in zipfile (web-server interface)
 def init_basic():
-    TableFile = dir_path + '\call_tables.data.gz'
-    MatchingFile = dir_path + '\\robust_matching_tables.data.gz'
+    TableFile = dir_path + '/call_tables.data.gz'
+    MatchingFile = dir_path + '/robust_matching_tables.data.gz'
     return call_main.init_state_basic(TableFile, MatchingFile)
 
 # Top-level call for Alexa version: string to string

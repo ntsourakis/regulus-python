@@ -12,8 +12,7 @@ from django.conf import settings
 import json
 import uuid
 import sys
-#TODO
-sys.path.append('./quasimodo/python/')
+#sys.path.append('./quasimodo/python/')
 import quasimodo.python.lite_call_runtime_top as call
 
 States ={};

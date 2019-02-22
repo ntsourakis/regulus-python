@@ -1,13 +1,13 @@
 #!/usr/bin/python
 
-import lite_call_output_manager as output_manager
-import lite_call_tables as tables
-import lite_call_scores as scores
-import lite_call_logging as log
+import pozzi.python.lite_call_output_manager as output_manager
+import pozzi.python.lite_call_tables as tables
+import pozzi.python.lite_call_scores as scores
+import pozzi.python.lite_call_logging as log
 
-import lite_grammar_match as lgm
-import lite_grammar_match_tables as lgm_tables
-import lite_grammar_match_regularise as lgm_regularise
+import pozzi.python.lite_grammar_match as lgm
+import pozzi.python.lite_grammar_match_tables as lgm_tables
+import pozzi.python.lite_grammar_match_regularise as lgm_regularise
 
 import random
 

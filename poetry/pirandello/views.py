@@ -13,7 +13,7 @@ import json
 import uuid
 import sys
 #TODO
-sys.path.append('./pirandello/python/')
+#sys.path.append('./pirandello/python/')
 import pirandello.python.lite_call_runtime_top as call
 
 States ={};

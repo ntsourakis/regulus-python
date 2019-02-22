@@ -13,7 +13,7 @@ import json
 import uuid
 import sys
 #TODO
-sys.path.append('./ungaretti/python/')
+#sys.path.append('./ungaretti/python/')
 import ungaretti.python.lite_call_runtime_top as call
 
 States ={};

@@ -12,8 +12,7 @@ from django.conf import settings
 import json
 import uuid
 import sys
-#TODO
-sys.path.append('./strasly/python/')
+#sys.path.append('./strasly/python/')
 import strasly.python.lite_call_runtime_top as call
 
 States ={};

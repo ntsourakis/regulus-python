@@ -1,7 +1,7 @@
 
 # ---------------------------------------------------
 
-import lite_grammar_match
+import quasimodo.python.lite_grammar_match
 import csv 
 import time
 import sys

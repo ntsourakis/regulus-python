@@ -1,9 +1,9 @@
 #!/usr/bin/python
 
-import lite_grammar_match_tables as lgm_tables
-import lite_grammar_match_parameters as parameters
-import lite_grammar_match_regularise as regularise
-import wagnerfischer as w
+import quasimodo.python.lite_grammar_match_tables as lgm_tables
+import quasimodo.python.lite_grammar_match_parameters as parameters
+import quasimodo.python.lite_grammar_match_regularise as regularise
+import quasimodo.python.wagnerfischer as w
 
 # TOP-LEVEL CALLS
 

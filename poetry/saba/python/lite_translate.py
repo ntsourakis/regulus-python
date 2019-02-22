@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
-import lite_grammar_match as lgm
-import lite_grammar_match_tables as lgm_tables
+import pozzi.python.lite_grammar_match as lgm
+import pozzi.python.lite_grammar_match_tables as lgm_tables
 
 import pprint
 
