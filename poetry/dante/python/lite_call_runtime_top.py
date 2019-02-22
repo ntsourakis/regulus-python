@@ -15,8 +15,8 @@ def init():
 # Use this to load table file from canonical place in zipfile (web-server interface)
 def init_basic():
     #TODO
-    TableFile = dir_path + '\call_tables.data.gz'
-    MatchingFile = dir_path + '\\robust_matching_tables.data.gz'
+    TableFile = dir_path + '/call_tables.data.gz'
+    MatchingFile = dir_path + '/robust_matching_tables.data.gz'
     return call_main.init_state_basic(TableFile, MatchingFile)
 
 # Top-level call for Alexa version: string to string
