@@ -44,13 +44,13 @@ INSTALLED_APPS = [
 
     # Local Apps
 	'dante.apps.DanteConfig',
-	'montale.apps.MontaleConfig',
-	'pirandello.apps.PirandelloConfig',
-	'pozzi.apps.PozziConfig',
-	'quasimodo.apps.QuasimodoConfig',
-	'saba.apps.SabaConfig',
-	'strasly.apps.StraslyConfig',
-	'ungaretti.apps.UngarettiConfig',
+	#'montale.apps.MontaleConfig',
+	#'pirandello.apps.PirandelloConfig',
+	#'pozzi.apps.PozziConfig',
+	#'quasimodo.apps.QuasimodoConfig',
+	#'saba.apps.SabaConfig',
+	#'strasly.apps.StraslyConfig',
+	#'ungaretti.apps.UngarettiConfig',
 
 ]
 
