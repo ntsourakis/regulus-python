@@ -1,10 +1,10 @@
 #!/usr/bin/python
 
-import lite_call_tables as tables
+import dante.python.lite_call_tables as tables
 
-import lite_call_english as english
-import lite_call_french as french
-import lite_call_german as german
+import dante.python.lite_call_english as english
+import dante.python.lite_call_french as french
+import dante.python.lite_call_german as german
 
 # Turn abstract actions into strings
 

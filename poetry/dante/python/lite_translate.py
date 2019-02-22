@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
-import lite_grammar_match as lgm
-import lite_grammar_match_tables as lgm_tables
+import dante.python.lite_grammar_match as lgm
+import dante.python.lite_grammar_match_tables as lgm_tables
 
 import pprint
 

@@ -1,9 +1,9 @@
 #!/usr/bin/python
 
-import lite_grammar_match_tables as lgm_tables
-import lite_grammar_match_parameters as parameters
-import lite_grammar_match_regularise as regularise
-import wagnerfischer as w
+import dante.python.lite_grammar_match_tables as lgm_tables
+import dante.python.lite_grammar_match_parameters as parameters
+import dante.python.lite_grammar_match_regularise as regularise
+import dante.python.wagnerfischer as w
 
 # TOP-LEVEL CALLS
 
