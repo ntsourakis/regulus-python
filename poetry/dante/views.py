@@ -12,8 +12,8 @@ from django.conf import settings
 import json
 import uuid
 import sys
-sys.path.append('./dante/python/')
-sys.path.append('/app/poetry/python/')
+#sys.path.append('./dante/python/')
+#sys.path.append('/app/poetry/python/')
 import dante.python.lite_call_runtime_top as call
 import os 
 dir_path = os.path.dirname(os.path.realpath(__file__))
