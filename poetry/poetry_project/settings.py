@@ -41,7 +41,7 @@ INSTALLED_APPS = [
 	# Third-Party Apps
     'rest_framework',
     'rest_framework.authtoken',
-	
+	'corsheaders',
 	
 
     # Local Apps
@@ -63,7 +63,7 @@ REST_FRAMEWORK = {
 }
 
 MIDDLEWARE = [
-    
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
 	'django.middleware.security.SecurityMiddleware',
     'django.middleware.common.CommonMiddleware',
