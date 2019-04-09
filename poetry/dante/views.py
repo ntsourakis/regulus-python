@@ -55,7 +55,10 @@ class DanteInitView(APIView):
         #for key, value in request.session.items():
         #    print('{} => {}'.format(key, value))
         l_result = {'stateId':l_stateId, 'state':l_newState}
-        request.session['fav_color'] = 'blue'
+        
+        if 'fav_color' in request.session:
+           print(request.session['fav_color'])
+        request.session['fav_color'] = 'blue'        
         return Response(l_result)
     
 class DanteMessageView(APIView):
@@ -69,7 +72,7 @@ class DanteMessageView(APIView):
         l_message = req['message']
         print("l_state")
         #l_state = request.session['l_stateId']
-        
+
         for key, value in request.session.items():
             print('{} => {}'.format(key, value))
         #fav_color = request.session.get('fav_color')
@@ -78,14 +81,15 @@ class DanteMessageView(APIView):
 		
         #st = request.session['States']
         print("--------------------")
-        print(l_state);
-		#print(request.session['fav_color'])
+        #print(l_state);
+        if 'fav_color' in request.session:
+           print(request.session['fav_color'])
 		
         #l_state=State.objects.get()
         #print("l_state")
         #print(l_state);
         l_result = call.message_and_state_to_message(l_message, l_state)    
-        print(l_state);
+        #print(l_state);
         States[l_stateId] = l_state
         return Response(l_result)
 
