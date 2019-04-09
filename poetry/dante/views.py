@@ -87,7 +87,7 @@ class DanteMessageView(APIView):
 		
         #l_state=State.objects.get()
         #print("l_state")
-        #print(l_state);
+        print(l_state);
         l_result = call.message_and_state_to_message(l_message, l_state)    
         #print(l_state);
         States[l_stateId] = l_state
