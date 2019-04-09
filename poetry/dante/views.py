@@ -20,7 +20,7 @@ import os
 dir_path = os.path.dirname(os.path.realpath(__file__))
 print(dir_path)
 
-States ={};
+States = {};
 
 def DantePageView(request):
     return HttpResponse('Hello, Dante!')
@@ -55,6 +55,7 @@ class DanteInitView(APIView):
         #for key, value in request.session.items():
         #    print('{} => {}'.format(key, value))
         l_result = {'stateId':l_stateId, 'state':l_newState}
+        request.session['fav_color'] = 'blue'
         return Response(l_result)
     
 class DanteMessageView(APIView):
@@ -68,16 +69,24 @@ class DanteMessageView(APIView):
         l_message = req['message']
         print("l_state")
         #l_state = request.session['l_stateId']
-        #for key, value in request.session.items():
-        #    print('{} => {}'.format(key, value))
+        
+        for key, value in request.session.items():
+            print('{} => {}'.format(key, value))
         #fav_color = request.session.get('fav_color')
         #print(fav_color)
         l_state = States[l_stateId]
+		
+        #st = request.session['States']
+        print("--------------------")
+        print(l_state);
+		#print(request.session['fav_color'])
+		
         #l_state=State.objects.get()
         #print("l_state")
         #print(l_state);
         l_result = call.message_and_state_to_message(l_message, l_state)    
-        
+        print(l_state);
+        States[l_stateId] = l_state
         return Response(l_result)
 
 class DanteRobustView(APIView):
@@ -93,5 +102,6 @@ class DanteRobustView(APIView):
         #print("l_state")
         #print(l_state);
         l_result = call.robust_match(l_message, l_state, 1)    
-        
+        States[l_stateId] = l_state
+		
         return Response(l_result)
