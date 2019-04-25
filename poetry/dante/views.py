@@ -70,6 +70,8 @@ class DanteMessageView(APIView):
         l_stateId = request.META.get('HTTP_AUTHORIZATION').split(' ')[1]
         #l_stateId = req['state']
         l_message = req['message']
+        print("l_stateId:")
+        print(l_stateId)
         print("l_state")
         #l_state = request.session['l_stateId']
 
@@ -81,7 +83,10 @@ class DanteMessageView(APIView):
 		
         #st = request.session['States']
         print("--------------------")
-        #print(l_state);
+        print("len(States):")
+
+        print ("Length : %d" % len (States))
+		#print(l_state);
         if 'fav_color' in request.session:
            print(request.session['fav_color'])
 		
