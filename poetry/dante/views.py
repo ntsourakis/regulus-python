@@ -46,7 +46,9 @@ class DanteInitView(APIView):
         l_stateId = request.META.get('HTTP_AUTHORIZATION').split(' ')[1]
         #l_stateId = uuid.uuid4().hex # generate unique Id for state
         States[l_stateId] = l_newState
-        #request.session['l_stateId'] = l_newState
+        print (">>>>>>> INIT >>>>>>> States[l_stateId] : %s" % States[l_stateId])
+        
+		#request.session['l_stateId'] = l_newState
         #fav_color = request.session.get('fav_color')
         #print(fav_color)
         #request.session['fav_color'] = 'blue'
@@ -72,7 +74,7 @@ class DanteMessageView(APIView):
         l_message = req['message']
         print("l_stateId:")
         print(l_stateId)
-        print("l_state")
+        #print("l_state")
         #l_state = request.session['l_stateId']
 
         for key, value in request.session.items():
@@ -82,20 +84,22 @@ class DanteMessageView(APIView):
         l_state = States[l_stateId]
 		
         #st = request.session['States']
-        print("--------------------")
+        #print("--------------------")
         
-        print ("len(States) : %d" % len (States))
+        #print ("len(States) : %d" % len (States))
 		#print(l_state);
         if 'fav_color' in request.session:
            print(request.session['fav_color'])
 		
         #l_state=State.objects.get()
         #print("l_state")
-        print ("l_state : %s" % l_state)
+        #print ("l_state : %s" % l_state)
         l_result = call.message_and_state_to_message(l_message, l_state)    
-        print ("l_result : %s" % l_result)
-        print ("l_state : %s" % l_state)
+        #print ("l_result : %s" % l_result)
+        #print ("l_state : %s" % l_state)
         States[l_stateId] = l_state
+        print (">>>>>>> MESSAGE >>>>>>> States[l_stateId] : %s" % States[l_stateId])
+        
         return Response(l_result)
 
 class DanteRobustView(APIView):
@@ -108,9 +112,11 @@ class DanteRobustView(APIView):
         l_message = req['message']
         #print("l_state")
         l_state = States[l_stateId]
+
         #print("l_state")
         #print(l_state);
         l_result = call.robust_match(l_message, l_state, 1)    
-        States[l_stateId] = l_state
-		
+        States[l_stateId] = l_state 
+        print (">>>>>>> ROBUST >>>>>>> States[l_stateId] : %s" % States[l_stateId])
+        		
         return Response(l_result)
