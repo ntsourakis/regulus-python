@@ -151,3 +151,7 @@ CORS_ORIGIN_WHITELIST = (
     'localhost:3000/',
 	'regulus-react.herokuapp.com/'
 )
+
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = True

@@ -83,18 +83,18 @@ class DanteMessageView(APIView):
 		
         #st = request.session['States']
         print("--------------------")
-        print("len(States):")
-
-        print ("Length : %d" % len (States))
+        
+        print ("len(States) : %d" % len (States))
 		#print(l_state);
         if 'fav_color' in request.session:
            print(request.session['fav_color'])
 		
         #l_state=State.objects.get()
         #print("l_state")
-        print(l_state);
+        print ("l_state : %s" % l_state)
         l_result = call.message_and_state_to_message(l_message, l_state)    
-        #print(l_state);
+        print ("l_result : %s" % l_result)
+        print ("l_state : %s" % l_state)
         States[l_stateId] = l_state
         return Response(l_result)
 
