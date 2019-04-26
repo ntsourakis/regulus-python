@@ -47,7 +47,7 @@ class DanteInitView(APIView):
         #l_stateId = uuid.uuid4().hex # generate unique Id for state
         States[l_stateId] = l_newState
         print (">>>>>>> INIT >>>>>>> States[l_stateId] : %s" % States[l_stateId])
-        print (">>>>>>> INIT >>>>>>> States.__class__ : %s" % States.__class__)
+        print (">>>>>>> INIT >>>>>>> States : %s" % States)
 		
 		#request.session['l_stateId'] = l_newState
         #fav_color = request.session.get('fav_color')
@@ -84,7 +84,7 @@ class DanteMessageView(APIView):
         #fav_color = request.session.get('fav_color')
         #print(fav_color)
         print ("len(States) : %d" % len (States))
-        print (">>>>>>> MESSAGE >>>>>>> States.__class__ : %s" % States.__class__)
+        print (">>>>>>> MESSAGE >>>>>>> States : %s" % States)
         l_state = States[l_stateId]
 		
         #st = request.session['States']
