@@ -72,6 +72,7 @@ class DanteMessageView(APIView):
         l_stateId = request.META.get('HTTP_AUTHORIZATION').split(' ')[1]
         #l_stateId = req['state']
         l_message = req['message']
+        print (">>>>>>> MESSAGE >>>>>>> l_message : %s" % l_message)
         print("l_stateId:")
         print(l_stateId)
         #print("l_state")
