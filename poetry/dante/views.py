@@ -82,7 +82,8 @@ class DanteMessageView(APIView):
             print('{} => {}'.format(key, value))
         #fav_color = request.session.get('fav_color')
         #print(fav_color)
-        l_state = States[l_stateId]
+        print ("len(States) : %d" % len (States))
+		l_state = States[l_stateId]
 		
         #st = request.session['States']
         #print("--------------------")
